@@ -1,0 +1,154 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+     
+    font-size: large;
+    font-family: 'Lato', sans-serif, Verdana, Tahoma ;
+
+}
+
+.k1 {
+
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left,#424242 , rgb(221, 220, 220));
+
+}
+
+.k2 {
+
+    z-index: 3;
+    width: 400px;
+    border: 1px solid black;
+    margin: 0px auto; 
+    position: relative;
+    top: 40%;
+    transform:translateY(-50%);
+    padding: 20px 40px;
+    background-color: white;
+    /* background: linear-gradient(to top left,rgb(255, 253, 253),gray); */
+    background-color: #ffffff22;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px black;
+
+}
+
+.header h1 {
+
+    font-size: 2.5rem;
+    color: #212121;
+
+}
+
+.header p {
+
+    font-size: 0.9rem;
+    color: #555;
+
+}
+
+.m1 {
+
+    margin: 20px 0;
+}
+
+.m1 p {
+
+    margin: 10px 0;
+}
+
+.m1 p label {
+    
+    display: block;
+    font-weight: bold;
+
+}
+
+.m1 p input {
+
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(2, 0, 0);
+    border-radius: 7px;
+    font-size: 1.1rem;
+    margin: 4px;
+}
+
+.m1 p input:hover {
+    background-color: rgb(203, 202, 202);
+    color: black;
+    font-weight: bolder;
+}
+
+.b1 {
+
+    background-color:dimgray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 5px 123px;
+}
+
+.b1:hover {
+
+    cursor: pointer;
+    background-color: #040404fa;
+    text-decoration: underline;
+
+}
+
+.p2 {
+
+    text-align: center;
+
+}
+
+.p2 a {
+
+    color: #0b2ef5;
+
+}
+
+.p2 a:hover {
+
+    cursor: pointer;
+    color: red;
+    text-decoration: none;
+
+}
+
+.circle {
+   
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right,dimgray,white);
+    position: absolute;
+
+}
+
+.c1 {
+
+    top: 100px;
+    left: 430px;
+
+}
+
+.c2 {
+
+    background: linear-gradient(to top right,rgb(75, 73, 73),rgb(196, 196, 196));
+    bottom: 200px;
+    right: 250px;
+
+}

@@ -1,0 +1,251 @@
+/* main topics in grid */
+
+/* container property */
+
+/* display: grid; */
+/* gap: numberpx; */
+/* row-gap: numberpx; */
+/* column-gap: numberpx; */
+/* grid-template-columns: ; */
+/* grid-template-rows:; */
+/* grid-auto-rows: ; */
+/* justify-content: ; */
+/* align-content: ; */
+/* align-items: ; */
+/* grid-template-areas: "hdr hdr hdr hdr"
+                         "sbr man man man"
+                         "sbr man man man"
+                         "sbr man man man"
+                         "ftr ftr ftr ftr"; */
+
+/* child property */
+
+/* align-self: ; */
+/* justify-self: ; */
+/* grid-column-start: ; */
+/* grid-column-end: ; */
+/* grid-column: ; */
+/* grid-row-start: ; */
+/* grid-row-end: ; */
+/* grid-row: ; */
+/* grid-area: ; */
+
+    
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 800px;
+    border: 2px solid red;
+    display: grid;
+    /* display grid ma aek column hoy by default and ghani badhi row hase as par contant */
+
+    /* gap: 20px; */
+    /* sort property for row gap and column gap */
+
+    row-gap: 20px;
+    /* row vache gap aapva mate */
+
+    column-gap: 5px;
+    /* column vache gap aapva mate */
+
+
+
+    /* grid-template-columns: ; */
+    /* ketli column hase and column ni ketli width rakhvi ae darshave chhe */
+
+    /* grid-template-columns: 20vw 200px 300px; */
+
+    /* ketli column rakhvi chhe ae pramane value levi , jem k 3 column rakhvi chhe jama peli column ni width 20vw chhe jena thi te screen pramane vadhe ghate, 2 ja column ni width ae 200px chhe and 3 ja column ni width 300px */
+
+    /* grid-template-columns: 30% 70%; */
+
+    /* ahiya 2 value chhe aetle 2 columm banse and and value % ma hovathi peli column 30% width le chhe and biji column 70% width le chhe */
+
+    /* grid-template-columns: 1fr 2fr 3fr 1fr; */
+
+    /* grid-template-columns:; ma fr vaprvathi responsive bani sake */
+    /* ahiya total 4 value hovathi 4 column banse and ahiya value fr ma chhe , fr aetle k jetli value aapeli hoy aeno sarvalo kari je value aave aetla bhag padvana and 1fr valo 1 bhag lese 2fr vali column 2 bhag lese and 3 fr valo bhag 3 jetlo bhag lese */
+    /* jemke ahiya 1fr+2fr+3fr+1fr=total 7 so ahiya 7 ne 4 bhag ma vehchavanu jema pela ne 1 bija ne 2 tija ne 3 and 4 ne 1 jetlo bhag malse */
+
+    /* grid-template-columns: repeat(4,1fr); */
+    /* jo aapne gani var aek nu aek lakhvu na hoy to direct repeat function vapri sakay */
+    /* ahiya 4,1fr aetle 4 time 1fr */
+
+    /* grid-template-columns: 200px 200px 200px auto; */
+    /* auto property baki vadheli badhi width lai le chhe , jemke ahiya pela column ma 200px fix width and baki vadheli width auto vade biji column ne mali jay chhe */
+
+
+    /* grid-template-rows: 250px 80px; */
+    /* row ni height darsava mate vapray chhe */
+    /* ahiya 2 value define kari chhe peli row ni height 250px and bija ni height 80px */
+
+    /* grid-auto-rows: 150px; */
+    /* je pan rows ne height nai maleli hoy te badhi row ne 150px height mali jase */
+    /* jemke ahiya aapne khali peli 2 row ni height j define kari chhe to aena sivay ni badhi row ne 150px thay */
+
+
+
+    /* justify-content: ; */
+    /* horizontally kam kare chhe */
+    /* row ni direction ma contant ne sarkho karva mate justify-contant property vapray chhe */
+
+    /* justify-content: start; */
+    /* by default aeni value start hoy chhe */
+
+    /* justify-content: end; */
+    /* horizontally contant last ma jato rese  */
+
+    /* justify-content: center; */
+    /* justify-content: ; ae row wise kam kare chhe */
+
+    /* contant row ma center aavi jase */
+
+    /* justify-content: space-around; */
+    /* contant aaju baju jagya aapva mate */
+
+    /* justify-content: space-between; */
+    /* contant ni vache jagya aapva mate */
+
+    /* justify-content: space-evenly; */
+    /* contant ni vache and aajubaju jagya aapva mate */
+
+
+
+
+    /* align-content: ; */
+    /* vertically content ne align karva mate */
+    
+    /* align-content: stretch; */
+    /* by default aeni property stretch hoy chhe, stretch means k potani jate j stretch thai ne gothvai jay*/
+
+    /* align-content: center; */
+    /* vertically contant ne center ma lavava mate  */
+
+
+
+    /* align-items: ; */
+    /* align items vade aapde tena box size ni andar j potane align karse */
+
+    /* align-items: center; */
+    /* potana box size ma contant center ma aavi jase */
+
+    grid-template-areas: "hdr hdr hdr hdr"
+                         "sbr man man man"
+                         "sbr man man man"
+                         "sbr man man man"
+                         "ftr ftr ftr ftr";
+
+    /* direct layout banava mate vapray chhe  */
+    /* jemke k box-1 ne hdr aapi */
+
+}
+
+.box {
+    border: 2px solid green;
+    padding: 12px;
+}
+
+#box-1 {
+
+    background-color: bisque;
+
+    /* justify-self: ; */
+    /* koi pan particular box ne horizontally align karva mate */
+
+    /* justify-self: stretch; */
+    /* by default aeni value stretch hoy */
+
+    /* justify-self: start; */
+    /* horizontally box ne start ma lavava */
+
+    /* justify-self: center; */
+    /* horizontally box ne center ma lavava */
+
+    /* justify-self: end; */
+    /* horizontally box ne end ma lavava */
+
+
+    /* align-self: ; */
+    /* koi pan particular box ne vertically align karva mate */
+
+    /* align-self: start; */
+    /* align-self: center; */
+    /* etc.. */
+
+
+
+    /* grid column and row ae vache jagya hoy ae pramane ganay chhe */
+
+    /* grid-column-start: 1; */
+    /* column start kyathi thase ae darshavava mate */
+    
+    /* grid-column-end: 3; */
+    /* column end kyathi thase ae darshavava mate */
+    /* 1-3 aetle k kul 2 column jetli jagya lese */
+
+    /* grid-column-end: 5; */
+    /* jo aapne column karta pan vadhare indexing darshaviae to aetli column bani jay */
+    /* jemke ahiya 5 laiae to kul 1-5 aetle k 4 column bani jay */
+
+    /* grid-column: 1 / 3; */
+    /* sort hand property for grid start and grid end  */
+    /* ahiya pela starting value aapvani pachhi slace(/) aapvani and last ma ending value aapvani */
+
+    /* grid-column: 1 / span 2 ; */
+    /* ahiya span vapriae aetle ketli column sudhi javu ae darsave chhe */
+
+    /* grid-column: 1 / -1; */
+    /* minius indexing pan hoy and tema -1 aetle last -2 aetle secon last */
+    /* ahiya 1 thi start karine last sudhi column jase */
+
+
+
+    /* grid-row-start: 1; */
+
+    /* grid-row-end: 4; */
+
+    /* grid-row: 1 / 4; */
+    /* sortand property for grid-row-start and grid-row-end */
+
+
+
+    /* grid-area: 1 / 1 / 3 / 4; */
+    /* grid-area 2 rite use thay aek to upper darsavyu ae pramne and biju direct grid-templets-areas ni madad thi name vade layout banava mate */
+    /* grid-area is a sorthand property for grid-row and grid-column */
+    /* ahiya 1 / 1 / 3 / 4 ahiya pela number ni value ae row kyathi start thay ae darshave , bija number ni value ae column kyathi start thay ae darshave , tija number ni value row ae kya end thay ae darsave , chotha number ni value ae column kya end thay ae darshave chhe  */
+
+    grid-area: hdr;
+    /* grid-templets-areas parthi aane header banava mate */
+    
+}
+
+#box-2{
+    grid-area: sbr;
+    /* grid-templets-areas parthi aane side bar banava mate */
+}
+
+#box-3{
+    grid-area: man;
+    /* grid-templets-areas parthi aane main banava mate */
+    
+}
+
+#box-4{
+    grid-area: ftr;
+    /* grid-templets-areas parthi aane footer banava mate */
+}
+
+
+#box-7 {
+    /* grid-column: 2 / span 2; */
+    /* ahiya 2 column thi start karine 2 column jetli jagya lese */
+
+    /* grid-area: 3/2/6/5; */
+}

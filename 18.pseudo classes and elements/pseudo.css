@@ -1,0 +1,153 @@
+/* pseudo classes */
+/* pseudo-class is used to define a special state of an element */
+/* pseudo class ae single colon(:) thi chalu thay chhe */ 
+/* :link */
+/* :hover  */
+/* :active */
+/* :visited */
+/* :first-child */
+/* :last-child */
+/* :nth-child(an+b) */
+
+
+/* pseudo elements */
+/* pseudo-elements is used to style specified parts of an elements */
+/* pseudo elements ae double colons(::) thi chalu thay chhe */
+/* ::selection */
+/* ::first-letter */
+/* ::first-line */
+/* ::before */
+/* ::after */
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.primary-button{
+    font-size: 2vw;
+    padding: 10px;
+}
+
+/* pseudo classes examples.... */
+
+.primary-button:link {
+    /* koi pan link ni starting property aetle link means k peli varn jyare web-site khule tyare link kevi dekhavi joiae ae define karva mate */
+    color: green;
+}
+
+.primary-button:hover {
+    /* jyare aapne koi link par hover kariae means k link par cursor lai jaiae tyare link kevi dekhavi joiae ae define karva mate */
+    color: white;
+    background-color: red;
+}
+
+.primary-button:visited {
+    /* jo ek var link visit thai jay to ae kevi dekhavi joiae ae define karva mate */
+    color: rgb(252, 104, 178);
+    /* aek var visit thaya pachhi jo refresh karishu to pan ae link visited pseudo class ma define kareli property j follow karse */
+    /* jemk ahiya aapne jo link par aek var click kari didhu to ae have yellow color nu j dekhase */
+}
+
+.primary-button:active {
+    /* jyare aapne link par click karisu ae j samye je property dekhay ae active pseudo class vade apay chhe */
+    color: black;
+    background-color: white;
+    border: 3px solid green;
+}
+
+/* koi pan item select karva mate child pseudo class vapray chhe */
+
+ul li:first-child {
+    /* ahiya :first-child ae pseudo class chhe */
+    /* jetla pan ul chhe aenna andar na li ma je first-child(first li) hase ae select thai jase */
+    background-color: violet;
+}
+
+ul li:last-child {
+    /* ahiya :last-child ae pseudo class chhe */
+    /* jetla pan ul chhe aenna andar na li ma je last-child(last li) hase ae select thai jase */
+    background-color: red;
+}
+
+
+/* nth child formulls = an + b */
+/* here n is started with 0 */
+
+ul li:nth-child(4) {
+    /* here we use only b(b=4) so we select 4th number of child in list */
+    background-color: lightgreen;
+}
+
+ul li:nth-child(3n) {
+    /* 3(0)=0th child, 3(1)=3rd child .... */
+    /* here we select 3rd,6th,9th,12th... child by 3n */
+    background-color: aqua;
+}
+
+ul li:nth-child(2n+1) {
+    /* here pute value of n starting with 0 means 2(0)+1=1st child , 2(1)+1=3rd child .... */
+    background-color: burlywood;
+}
+
+
+
+
+/* pseudo elements examples.. */
+
+::selection {
+    /* by ::selection pseudo elements we change the selction style of any content */
+    color: lightgreen;
+    background-color: black;
+}
+
+
+h2::first-letter {
+    /* here we select first latter of h2 by pseudo element ::first-latter */
+    font-size: 3rem;
+}
+
+p::first-line {
+    /* here we select first line of p by pseudo elements ::first-line */
+    background-color: lightseagreen;
+}
+
+/* for ::before and ::after pseudo elements content attributes is very important for add any new content */
+/* before k after ma je content add kariae ae khali show j thay chhe aene aapde select kari sakta nathi karan k ae dom(html) ma nathi */
+
+h3::before {
+    /* if we want to add content befor h3 content so we use ::before pseudo elements */
+    content: 'this is begining';
+    /* je content add karvo hoy ae content ne content attributes ma single invertend comma ma lakhvo */
+}
+
+h3::after {
+    /* if we want to add content after any tag content so we use ::after pseudo elements */
+    content: 'mahendra bahubali';
+    /* je content add karvo hoy ae content ne content attributes ma single invertend comma ma lakhvo */
+}
+
+.required::after {
+    /* form ma ghani var required information ma red star(*) aapelo hoy chhe ae aa rite umeri sakiae chhiae */
+    content: '*';
+    color: red;
+}
+
+.important::after {
+    content: 'important';
+    background-color: red;
+    color: white;
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
+
+    /* je je elment ne important class aapeli hase aena pachhal(after) important valu box aavi jase */
+}
+

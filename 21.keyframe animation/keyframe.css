@@ -1,0 +1,189 @@
+/* keyframe - animation properties */
+
+/* @keyframes name {
+    
+} */
+
+/* animation-name: ; */
+/* animation-duration: ; */
+/* animation-delay: ; */
+/* animation-iteration-count: infinite; */
+/* animation-direction: ; */
+/* animation-timing-function: ; */
+ /* animation-fill-mode: ; */
+
+/* shorthand property for all the animation property */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+body {
+    margin: 0;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    animation: orbit 3s linear infinite;
+    border-radius: 50%;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+    /* transition: 2s ease; */
+
+    /* animation-name: circles; */
+    /* keyframe pachhi je name lakhayu hoy ae animation-name ma lakhvu */
+
+    /* animation-name: slide-in; */
+    /* jo 2 var animation-name lakhya hoy to je last ma lakhyu hoy ae j run thase karan k biju override thai jay chhe */
+
+    animation-name: orbit;
+
+    animation-duration: 2s;
+    /* animation thava ma ketlo time lagvo joiae ae animation-duration ma lakhvu */
+
+    /* animation-delay: 3s; */
+    /* animation ketla time pachhi start thavu joiae ae darsavava mate animation-delay vapray chhe */
+
+    /* animation-iteration-count: 2; */
+    /* animation ketli var perform thavu joiae ae darsava mate animation-iteration-count vapray chhe */
+
+    animation-iteration-count: infinite;
+    /* infinite time animation chalu j rahese */
+
+    /* animation-direction: normal; */
+    /* The animation is played as normal(forwards) */
+    /* animation-direction ma default direction normal hoy chhe and te 0% thi 100% taraf jay chhe */
+
+    /* animation-direction: reverse; */
+    /* The animation is played in reverse direction(backwards) */
+    /* reverse direction normal karta reverse hoy means k 100% thi 0% */
+
+    /* animation-direction: alternate; */
+    /* the animation is played forwards first and then backwards */
+    /* pela aek var normal thase pachhi reverse pachhi normal pachhi reverse and so on */
+
+    /* animation-direction: alternate-reverse; */
+    /* The animation is played backwards first, then forwards */
+     /* pela aek var reverse thase pachhi normal pachhi reverse pachhi normal and so on */
+ 
+
+    animation-timing-function: linear;
+    /* transition-timing-function jevi j badhi property hou chhe */
+
+    /* animation-fill-mode: ; */
+    /* The animation-fill-mode property specifies a style for the target element when the animation is not playing(before it starts, after it endsi or both) */
+
+    /* animation-fill-mode: none; */
+    /* default value.animation will not apply any styles to the elements before or after it is executing */
+
+    /* animation-fill-mode: forwards; */
+    /* The element will retain the stylw values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) */
+    /* jya animation end thay tya j re (jo direction normal hoy to 100% vali jagya ae ) aavi jase */
+
+    /* animation-fill-mode: backwards; */
+    /* The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period  */
+    
+    /* animation-fill-mode: both; */
+    /* The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions */
+
+
+    border-radius: 50%;
+
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: up-down 0.4s ease infinite alternate;
+}
+
+.dot:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.dot:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+/* .box:hover {
+    transform: translate(200px);
+} */ 
+
+@keyframes circles 
+/* circles ae keyframes nu name chhe */
+/* transform property vade khali aek j transformation from-to darsavay pan jo aapde ghana badha transformation aek sathe karva hoy to keyframe animation vapri sakay*/
+{
+   0%, 100%
+   /* 0% and 100% time par su thavu joiae ae darsava mate */
+   {
+    transform: translate(0, 0);
+   } 
+   25%
+    /* 25% time par su thavu joiae ae darsava mate */
+   {
+    transform: translate(200px, 0);
+   }
+   50%
+    /* 50% time par su thavu joiae ae darsava mate */
+   {
+    transform: translate(200px, 200px);
+   }
+   75%
+    /* 75% time par su thavu joiae ae darsava mate */
+   {
+    transform: translate(0, 200px);
+   }
+}
+
+@keyframes slide-in {
+    0%
+    {
+        transform: translate(-400px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+
+@keyframes orbit {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    /* jo khali start 0% thi thatu hoy and 100% ssudhi jatu hoy aetle k 0% and 100% aa 2 j value define karvi hoy to from and to pan lakhi sakay */
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}

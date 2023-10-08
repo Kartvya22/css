@@ -1,0 +1,44 @@
+/* universal selector */
+/*
+
+ * {
+    font-size: 28px;
+}
+
+ */
+
+
+/* element selector exampale */
+body {
+    font-size: 22px;
+}
+
+/* id selector example */
+#second {
+    color: red;
+}
+ 
+/* class selector example */
+.good {
+    color: purple;
+    font-family: monospace;
+}
+
+/* nested selector example */
+#first>#paragraph>strong {
+    color: green;
+}
+
+
+/* grouping selector example */
+.highlight, .kishu {
+    background-color: yellow;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* specificity priority of selecros = id > class > element */
+
+p:hover {
+    font-family: cursive;
+}

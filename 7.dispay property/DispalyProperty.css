@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+/* block element */
+
+p {
+    color: rgb(16, 179, 21);
+
+    /* block element ne dispalay property inline karvathi inline element bani jase. */
+
+    /* display: inline; */
+
+    /* ahiya p tag inline thavathi width ma change nai aave */
+
+    /* width: 40px; */ 
+
+    display: inline-block;
+
+    /* have width ma change kari sakase */
+
+    width: 400px;
+}
+
+/* inline elements */
+
+a {
+
+    /* a ae inline hovathi width ma change nai thay karn k teni width contant jetli fix hoy chhe */
+
+    /* width: 400px; */
+
+    /* inline element ma dispaly block karvathi width change thai sake */
+
+    display: block;
+
+    width: 200px;
+}
+
+/* inline-block elements */
+
+img {
+
+    /* img ae inline-block element hovathi teni width define kari sakay */
+    width: 300px;
+    height: 300px;
+}
+
+/* block aakha row ni jagya le and tema 2 element ek line ma na aavi sake and tamea width define kari sakiae*/
+
+/* inline ma contant jetli jagya le and tema row ma jetla samay aetla element aavi sake and tema width change na thay */
+
+/* inline-block ma width change thay and tema 2 element ek line ma aavi sake  */
+
+/* none property ae html mathi content j nikali de chhe means k web site ma content na dekhay */
+
+/* nav vala mate below code */
+
+ul {
+    list-style: none;
+    text-align: end;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    
+}
+
+li {
+    display: inline;
+    margin: 10px;
+    border: none;
+}
+
+li:hover {
+    color: rgb(255, 38, 0);
+    cursor: pointer;
+}

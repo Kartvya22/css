@@ -1,0 +1,38 @@
+main {
+    border: 5px solid brown;
+    /* width: 25%; */
+    width: 25%;
+}
+
+/* body {
+    font-size: 2em;
+}
+
+header {
+    font-size: 2em;
+} */
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+section {
+    border: 5px dashed green;
+    width: 50vw;
+}
+
+/* px, %, vw, vh, em, rem ae badha units chhe. */
+/* em , rem ae font ma use karay */
+/* em ae relatively hoy and rem ae relatively na hoy */
+/* vw ae width mate vapray , vw ae relatively width le chhe. */
+/* vh ae hight mate vapray, vh ae relatively hight le chhe. */
+/* px ae fix mate vapray */
+

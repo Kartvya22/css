@@ -1,0 +1,97 @@
+/* --my-var: ; */
+
+ /* variables banava mate pela 2 hyphen(-) lagava pade and words ne seprate karva mate pan hyphen(-) vapray chhe and badha latter small aetle k biji abcd ma hova joiae*/
+
+ /* variables 2 prakarna hoy 1) local variables and 2) global variables */
+
+ /* local variabales ae koi class ma define karvano hoy */
+/* global variables ae root elment  k html element ma define karvanu hoy */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color:#23031a;
+    /* aa global variable chhe jene badha j element access kari sake */
+
+    --secondary-text-color:rgb(4, 22, 53);
+
+    --card-background-color:white;
+
+    --background-color:rgb(227, 223, 223);
+
+    --default-px:25px;
+}
+
+.dark {
+    --primary-text-color:white;
+    --secondary-text-color:#ddd;
+    --card-background-color:#333;
+    --background-color:#111;
+}
+/* ahiya dark class ma badha variable ne change karine dark theme jeva karaya chhe jethi aa dark class body ma umerine aapne dark theme banavi sakiae */
+/* body ne class="dark" aapiae to direct dark theme bani jay and javascript vade pan add kari sakay */
+
+
+.container {
+    min-height: 100vh;
+    padding: 40px;
+    /* --my-var:violet; */
+    background-color: var(--background-color);
+}
+
+
+
+.box {
+    
+    /* --my-var:red; */
+    /* aa local variable chhe karan k aa particular claas ya particular element aetle k box class ma define karelo jenathi aena child aene access kari sake */
+    /* variables banava mate pela 2 hyphen(-) lagava pade and words ne seprate karva mate pan hyphen(-) vapray chhe and badha latter small aetle k biji abcd ma hova joiae*/
+
+    padding: var(--default-px);
+
+    /* background-color: var(--my-var) ; */
+    /* variables ne use karva mate fist of all to jya variable difine karyo ae parent class ma hovu joiae */
+    /* variables ne use karva mate var() function vapray chhe */
+
+    background-color: var(--card-background-color);
+
+    margin-block: var(--default-px);
+
+    border-radius: var(--default-px);
+}
+
+h2 {
+    margin-bottom: var(--default-px);
+    background-color: var(--my-var);
+    /* ahiya h2 ae box no child hovathi variables use kari sakay */
+    color: var(--primary-text-color);
+}
+
+h1 {
+
+    text-align: center;
+
+    /* background-color: var(--my-var); */
+    /* ahiya h1 ae box ni bar hovathi variable property use kari sakato nathi */
+
+    /* background-color: var(--my-var , green); */
+    /* ahiya jo variable use na thato hoy to fallback tarike alpviram karine biji value lai sakiae jem k ahiya green color lai lese */
+
+    color: var(--primary-text-color);
+
+}
+
+p {
+    color: var(--secondary-text-color);
+}
+
+@media  screen and (max-width : 1200px) {
+ .container {
+    --my-var:rgb(130, 233, 238);
+    /* media queries ma pan aapde variables vapri sakiae ahiya jo width 1200px thi nani thase to variables color badlai jase */
+}
+}

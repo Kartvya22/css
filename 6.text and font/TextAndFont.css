@@ -1,0 +1,56 @@
+/* this is for imporat font family from fonts.google,com */
+/* below link is for julee font family */
+  @import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+
+h1 {
+
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline red;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 1rem;
+
+    /* below is for text style */
+
+    /* text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #090909;
+    color: transparent; */
+
+    /* below is for font style */
+    font-family:'silkscreen', Verdana, cursive;
+
+    
+}
+
+p {
+    /* below is for text style */
+
+    /* text-align: justify;
+    text-indent: 80px;
+    letter-spacing: 0.2rem;
+    line-height: 2rem; */
+    font-family: 'Julee',Arial, Helvetica, sans-serif, cursive;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+a {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* below is for text style */
+
+    /* text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-style: wavy; */
+    
+}
+

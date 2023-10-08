@@ -1,0 +1,16 @@
+body{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #d8fbc2b5;
+    background-color: #4c2560;
+}
+
+article{
+    background-color: rgb(35, 15, 35);
+    padding: 40px;
+    margin: 40px;
+    border-radius: 20px;
+}
+
+/* webAIM and coolors.co ae colors keva lage chhe ae check karvani website chhe */

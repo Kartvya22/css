@@ -1,0 +1,134 @@
+*{ 
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
+
+    /* overflow: visible;  */
+    /* visible is default for overflow */
+
+    /* overflow: hidden; */
+    /* hidden ma vadharano contant hide thai jase aetle k nai dekhay */
+
+    /* overflow: scroll; */
+    /* scroll ma vertical and horizontal scroll aave . jo contant occho hoy and container ma samai gyo hoy to bi scroll-bar batave j */
+
+    overflow: auto;
+    /* auto ma vertical scroll aave . jo contant ochho hoy to scroll na aave and vadhre contant hoy to scroll-bar aave. */
+
+
+}
+
+.p1 {
+    border: 2px solid green;
+    clear: right;
+
+}
+
+.p2 {
+    clear: left; 
+    /* left side valo flow clear kar dega */
+
+    /* clear: right; */
+    /* right side valo flow clear kar dega */
+
+    /* clear: both; */
+    /* bith side valo flow clear kar dega */
+
+    /* clear: inherit; */
+    /* parent na related flow clear thay chhe */
+}
+
+.img1 {
+    width: 160px;
+    height: 200px;
+
+    margin-left: 20px;
+
+    float: right;
+}
+
+.img2 {
+    width: 160px;
+    height: 160px;
+
+    float: left;
+    /* left side float thai jay */
+
+    /* float: right; */
+    /* right side float thai jay */
+
+    /* float: none; */
+    /* kai farak nai padta */
+
+    /* float: inherit; */
+    /* potana parent ni float property lai le chhe */
+
+}
+
+/* .block1 {
+    overflow: auto;
+}  */
+
+
+
+
+/* example css */
+
+
+.bigbox {
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    margin: 20%;
+    
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+
+.b1 {
+    background-color: red;
+
+    float: left;
+}
+
+.b2 {
+    
+    background-color: rgb(81, 0, 255);
+
+    float: left;
+
+    
+}
+
+.b3 {
+   
+    background-color: rgb(6, 118, 15);
+
+    float: left;
+
+    clear:left
+    
+}
+
+.b4 {
+    
+    background-color: rgb(242, 255, 0);
+
+    float: left;
+
+    clear: left;
+    
+    
+}
+
+/* khali text and photo mate j khas karine float and clear vapray */
+
+/* float and clear vade layout bani sake pan ae aek reccomandation practice na kevay aetle aano upyog khali image and text mate j karvo */

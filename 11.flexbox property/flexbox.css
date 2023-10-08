@@ -1,0 +1,232 @@
+/* main topics in video */
+
+/* display: flex;  */
+
+/* below all are container property */
+
+/* flex-direction: all property; */ 
+/* flex-wrap: all property; */
+/* flex-flow: wrap row; */
+/* gap:10px;  */
+/* justify-content: all; */
+/* align-items: all; */
+/* align-content: all; */
+
+/* below all are childern property */
+
+/* order:  number; */
+/* flex-grow: number; */
+/* flex-shrink: number; */
+/* flex-basis: number% ; */
+/* flex-basis: numberpx ; */
+/* flex: number number numberpx ; */
+/* align-self: flex-start; */
+
+
+* {
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    border: 2px solid red;
+
+    display: flex;
+
+    /* flex-direction: row; */
+    /* by default flex direction row hoy chhe  */
+    /* jo flex direction row hoy to data row ma gothvay */
+
+    /* flex-direction: column; */
+    /* flex direction column karine aapde column ma data gothvi sakiae */
+
+    /* flex-direction: row-reverse; */
+    /* row ma data ne reverse karva ma use thay */
+
+    /* flex-direction: column-reverse; */
+    /* column ma data ne reverse karva ma use thay */
+
+    /* flex-wrap: nowrap; */
+    /* bydefault no wrap hoy , aenathi wrap na thay */
+
+    /* flex-wrap: wrap; */
+    /* wrap property thi contant wrap thay chhe (wrap means screen nani thay to contant niche jato re) */
+
+    /* flex-wrap: wrap-reverse; */
+    /* contant reverse ma wrap thay chhe  */
+
+    
+    /* gap: 10px; */
+    /* margin na vapiar and container ma gap aapiae to ae content vache jagya chhode chhe (khali contanta vache j jagya chhode main conatainer thi to jodayelu j re */
+
+    /* row-gap: 10px; */
+    /* khali raw vache gap aapva mate */
+
+    /* column-gap: 10px; */
+    /* khali column vache gap aapva mate */
+
+
+
+    /* flex-flow: wrap row; */
+    /* short property for flex-wrap and flex-direction */
+    /* banne property ne bhegi define kari devay aani madad thi */
+
+
+    justify-content: center ;
+    /* contant ne center ma lavava mate  */
+
+    /* justify-content: ; propert ae main axis mate vapray(means k ae x-axis means k  horizontally kam kare chhe */
+
+    /* justify-content: start; */
+    /* default property chhe start , start vade horizontally  starting ma j content aave chhe */
+
+    /* justify-content: end; */
+    /* end vade horizonatally contant end ma jato re , contant horizontally end thi jodayelo hoy chhe */
+
+    /* justify-content: space-around; */
+    /* horizontally contant ni aajubaju and vache space aave chhe */
+
+    /* justify-content: space-between; */
+    /* horizontally khali contant ni vache j jagya aave */
+
+    /* justify-content: space-evenly; */
+    /* both horizotally contant aajubaju and contant vache jagya aavi jay chhe */
+
+   
+
+    align-items: center;
+    /* contant ne center lavava mate */
+
+    /* align-items: ; property ae cross axis mate vapray (means k ae y-axis means k  verically kam kare chhe */
+
+
+    /* align-items: stretch; */
+    /* default property chhe jenathi contant ae aena parent ni height lai le chhe */
+
+    /* align-items: flex-start; */
+    /* vertically stating ma aavi jay content */
+
+    /* align-items: flex-end; */
+    /* horizontally ending ma aavi jay content */
+
+
+
+    /* align-content: ; ae lagbhag vertically kam kare */
+
+
+    /* align-content: center; */
+    /* (vertically) contant vache aavi jay */
+
+    /* align-content: flex-start; */
+    /* (vertically) contant staring ma aavi jay */
+
+    /* align-content: flex-end; */
+    /* (vertically) contant end ma aavi jay */
+
+    /* align-content: space-around; */
+    /* (vertically) contant aaju baju jagya aavi jay chhe */
+
+    /* align-content: space-between ; */
+    /* (vertically) contant ni vache jagya aavi jay chhe */
+
+    /* align-content: space-evenly; */
+    /* (vertically) contant aaju baju and vacje jagya aavi jay chhe */
+
+
+
+
+}
+
+.box {
+    border: 1px solid green;
+
+    /* margin: 10px; */
+
+    width: 100px;
+
+    /* flex-basis: 25%;  */
+    /* flex-basis: ; ae with define karva vapray*/
+    /* aa property lagava mate gap na aapeli hovi joiae(gap aapelo hoy to chale pan aenathi completly 25% vade 4 box na lavi sakay) */
+    /* aa property lagava mate wrap chalu hovu joiae */
+    /* flex-basis:25%; lagavathi aek jo flex-direction row hase to darek row ma 4 box aave  */
+    /* flex-basis:25%; lagavathi aek jo flex-direction column hase to darek column ma 4 box aave  */
+
+}
+
+ 
+#box-1 {
+
+    order: 1;
+    /* order ni value by default 0 hoy chhe */ 
+    /* jeno order occho hoy ae pela aave and jeno order vadhare hoy ae last ma aave. */
+
+}
+
+#box-2 {
+
+    /* flex-basis: 200px; */
+    /* main (x or horizonatally) axis par width definae karva mare vapray */
+    
+
+}
+
+#box-3 {
+
+    order: 2;
+
+}
+
+#box-4 {
+
+    /* flex-grow: 1; */
+    /* flex-grow: ; check karva mare display warp na hovi joiae */
+    /* flex-grow ni by default value 0 hoy */
+    /* flex-grow vade box ketli speed thi vadhe ae darsavi sakay */
+
+}
+
+#box-5 {
+
+    /* flex-shrink: 2; */
+    /* flex-shrink: ; check karva mare display warp na hovi joiae */
+    /* flex-shrink: ; ni by default value 1 hoy */
+    /* flex-shrink: ; vade box bija karta vadhre speed thi nanu thay chhe */
+    /* flex-shrink: 0; to ae jaray shrink j na thay*/ 
+
+}
+
+#box-6 {
+
+    /* flex-grow: 2; */
+    /* flex-grow: 2; vade box vadhare speed thi vadhe*/
+    
+    flex: 1 0 60px;
+    /* flex: ; ae flex-grow, flex-shrink and flex-basis mate ni mix property chhe */
+    /* flex check karva mate wrap na hovu joiae */
+
+     
+
+}
+
+#box-7 {
+
+    /* flex-shrink: 3; */
+
+}
+
+#box-8 {
+
+    align-self: flex-start;
+    /* koi pan particular box ne align karva mate vapray chhe */
+    /* flex-start vade vertically starting ma jato re */
+
+    /* align-self: flex-end; */
+    /* flex-end vade vertically ending ma jato re */
+
+    /* align-self: stretch; */
+    /* stretch vade aakhu box parent ni height lai le means k stretch thai jaay */
+
+
+}

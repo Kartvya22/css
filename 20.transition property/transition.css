@@ -1,0 +1,80 @@
+/* transition property ae hover ma darsavati nathi ae hamesa sada class ma j darsavay chhe */
+
+
+.box {
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+
+    
+    transition-duration: 1s;
+    /* ketla time ma transition thavu joiae ae darsavava mate transition-duration vapray chhe */
+
+    transition-delay: 0.5s;
+    /* transition ae ketla time pachhi chalu thavu joiae ae darsavava maate */
+
+
+    /* transition-property: all; */
+    /* all property ae khas karine na vaprvi joiae karn k tena karne ae aek aek property chek karse and load vadhase to aapde jetli transition property vaprvi  hoy ae badhi define kari devi pan all nai vaprvanu */
+    /* all means k badhi property par transition property lagu padvi joiae */
+    
+    transition-property: border-radius, background-color, transform;
+    /* kai kai property par transition thavu joiae ae darshavava mate transition-property vapray */
+
+
+    /* transition-timing-function: ; */
+    /* transition duration jetla time ma j transition-timing-funcion lagu pade chhe */
+
+    /* transition-timing-function: ease; */
+    /* specifies a transition effect with a slow  start, then fast, then end slowly and this is default timing function */
+
+    /* transition-timing-function: linear; */
+    /* specifies a transition effect with the same speed from start to end */
+
+    /* transition-timing-function: ease-in; */
+    /* specifies a transition effect with a slow start */
+
+    /* transition-timing-function: ease-out; */
+    /* specifies a transition effect with a slow end */
+
+    /* transition-timing-function: ease-in-out; */
+    /* specifies a transition effect with a slow start and end */
+
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* you define your own values in a cubic-bezier function */
+    /* cubic-bezier ae inspect ma jaine define kariae to vadhare saru result male */
+
+    
+    /* transition: transition-property, transition-duration,  transition-timing-function, transition-delay ; */
+    /* shorthand property for all the transition property */
+    
+    /* transition: 1s ease-in-out ; */
+    
+
+}
+
+.box:hover {
+    background-color: purple;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.item {
+    font-size: 2rem;
+    padding: 8px 16px;
+    transition: 0.3s, ease-in;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: translateY(-10px);
+}

@@ -1,0 +1,113 @@
+/* Transform Properties */
+
+/* jo x and y bane direction ma transform property vaprvi hoy to shorthand property j vaprvi, jo alag alag x and y mate vapri to je last ma define kari hase ae j run thase means k override thai jase*/
+
+/* transform: scale(); */
+/* transform: skew(); */
+/* transform: translate(); */
+/* transform: rotate(); */
+
+/* transform-origin: ; */
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: steelblue;
+    margin: 80px auto;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s ease;
+
+    /* transform: scaleX(2); */
+    /* x-axis par content ketlo scale(nano-moto) thase ae darsavava mate scaleX() */
+    /* ahiya scaleX(2) hovathi content ae x-axis par aeni size na 2 ghano thase */
+
+    /* transform: scaleY(0.5); */
+    /* y-axis par content ketlo scale(nano-moto) thase ae darsavava mate scaleY() */
+    /* ahiya scaleY(0.5) hovathi content ae y-axis par aeni size na 0.5 jetlo thase */
+
+    /* transform: scaleZ(1.5); */
+    /* z-axis par content ketlo scale(nano-moto) thase ae darsavava mate scaleZ() */
+    /* ahiya scaleZ(1.5) hovathi content ae z-axis par aeni size na 1.5 jetlo thase */
+
+    /* scaleX(),scaleY()and scaleZ() aek sathe vapri sakta nathi nai to override thai jay ae vaprva mate scale(x,y) vaprvi pade */
+
+    /* transform: scale(2,0.5); */
+    /* scaleX() and scaleY() ni shorthand property chhe scale jema scale(x,y) darsavi sakiae */
+    /* ahiya content x-axis thi 2 ghano and y-axis thi adadho(0.5) thai jase */
+
+    /* transform: scale(2); */
+    /* jo aapne scale() ma aek j value define kariae to te by default badhi direction ma sarkhu sacale thase */
+
+    /* transform: skewX(20deg); */
+    /* x-axis na base par 20 deg rotate thase  */
+
+    /* transform: skewY(45deg); */
+    /* y-axis na base par 45 deg rotare thase  */
+
+    /* transform: skew(0deg, 40deg); */
+    /* x and y axis par skew karava mate */
+
+
+
+    /* transform: translateX(40px); */
+    /* translate property ae content aeni jagya thi ketlo dur jase ae darshava mate use thay chhe */
+    /* ahiya box ae  x direction ma 40px translate thase */
+
+    /* transform: translateY(-20px); */
+    /* ahiya box ae  Y direction ma 20px translate thase */
+
+    /* transform: translate(20px,-40px); */
+    /* x direction ma 20px and y direction ma 40px jasse */
+
+    /* transform: translate(50%,50%); */
+
+
+    /* transform: rotateX(75deg); */
+    /* x-axis na base par 75deg rotate thase */
+
+    /* transform: rotateY(40deg); */
+    /* y-axis na base paar 40deg rotate thase */
+
+    /* transform: rotate(45deg); */
+    /* by default rotate ae z-axis na base par thay chhe */
+
+    /* transform: rotateZ(45deg); */
+    /* z-axis na base par 45deg rotate thase */
+
+    /* transform: scale(1.2) skew(30deg) translate(45px) rotate(45deg); */
+    /* aek sathe badhi transform property pan lakhi sakiae chhiae  */
+
+
+
+
+    /* transform-origin: ; */
+    /* transform property kya point aagal thi lagu padi sakase ae darsavava mate transform-origin vapray */
+
+    /* transform-origin: 50% 50%; */
+    /* first value width par base hoy and second value height par base hoy chhe */
+    /* default value of transform-origin */
+
+    transform-origin: 100px 200px;
+    /* x axis means k width ma 100px thi and y means k height ma 200px thi transform property lagu padse */
+
+    /* transform-origin: top; */
+    /* parent class na top  thi transform property lagu padse */
+
+    /* transform-origin: top left; */
+    /* parent class na top left thi transform property lagu padse */
+
+}
+
+.box:hover {
+    transform: rotate(45deg);
+}

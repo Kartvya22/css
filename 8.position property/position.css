@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    height: 2000px;
+    margin: 120px 100px 1000px;
+    background-color: gray;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+
+    background-color: red;
+    
+    /* realtive position ae teni potani actual position na related hoy */
+    position: relative;
+
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+
+}
+
+.green{
+
+    background-color: green;
+
+    /* absolute position ae ya to 1. parent class na relatively hoy (jo parent class ma position relative kareli hoy to & jo aavu hoy to first priority aane j male) ya to 2. html na relative hoy matlab k html page (screen) relative hoy */
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+}
+
+.blue{
+    background-color: blue;
+
+    /* fixed position ae web page ma fix sthan par j hoy */
+    position: fixed;
+
+    left: 200px;
+    top: 280px;
+
+    /* jeni z-index vadhare hoy ae uper aave */
+    z-index: 3;
+}
+
+.purple{
+
+    background-color: purple;
+
+    /* parent class na relative ae move karse */
+    position: sticky;
+    top: 50px;
+}
+

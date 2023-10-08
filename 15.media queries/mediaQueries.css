@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+@media screen and (min-width:400px) and (max-width : 600px)
+
+/* ahiya @media ae media queries mate , screen ae media type chhe and screen aetle screen par media querie mate , min-width aetle start to and ahiya minimum width  400px chhe, and ae logical and chhe jema banne condition true hoy to j aagal vadhe, max-width aetle up and ahiya maximum 600px chhe*/
+
+/* media queries ni andar je elements/tag ne change karvo hoy ae lakhvo and aeni andar je changes karvana hoy ae lakhvu */
+
+{
+    body 
+    /* jemke ahiya body ne change karvi hoy to ae lakhvu */
+    {
+        background-color: green;
+        /* jo ajiya width 400px thi 600px ni range ma hase to baockground coor green tahse */
+    }
+}
+
+/* @media screen and (400px <= width <= 600px){
+    body {
+        background-color: green;
+    }
+} */
+/* media queries na version 4 ma aa navi syntax aavi chhe define karva maate */
+/* aapne banne mathi koi pan use kari sakiae */
+/* aa pan same min-width and max-width jevu varte chhe */
+
+/* @media screen and (width <= 400px){
+    body {
+        background-color: green;
+    }
+} */
+
+/* @media screen and (width <= 200px){
+    body {
+        background-color: blue;
+    }
+} */
+
+ @media (orientation : portrait)
+/* orientation portrait aetle k height ae width karta vadhare hoy ae condition */
+{
+    body {
+        background-color: yellow;
+    }
+} 
+
